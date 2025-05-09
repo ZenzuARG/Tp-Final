@@ -30,6 +30,34 @@ a:hover {
   color: #2ecc71;
 }
 
+h1, h2, h3 {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #27ae60;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #2ecc71;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -76,13 +104,14 @@ footer {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-evenly;
   padding: 1rem 0;
   transition: background-color 0.3s ease-in-out;
 }
 
 .nav-list {
+  margin: 10px;
   list-style: none;
   display: flex;
   gap: 1rem;
@@ -127,7 +156,7 @@ footer {
 .logo {
   width: 100px;
   height: 100px;
-  margin-left: 2rem;
+  margin-left: 1rem;
   transition: color 0.3s ease-in-out;
 }
 .logo:hover {
@@ -203,6 +232,42 @@ p {
 }
 .team .cards .card {
   animation: fade-in 0.5s ease-out;
+}
+
+.content-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 0;
+  animation: fade-in 0.5s ease-out;
+}
+.content-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.values {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 0;
+  animation: fade-in 0.5s ease-out;
+}
+.values h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2ecc71;
+}
+.values ul {
+  list-style: none;
+  padding: 0;
+}
+.values ul li {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  color: #2c3e50;
 }
 
 .services-grid .cards {
