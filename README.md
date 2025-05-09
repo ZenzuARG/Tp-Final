@@ -4,7 +4,7 @@ Este es un proyecto final del curso de Desarrollo Full Stack, centrado en un sit
 
 ## 📁 Estructura
 
-/
+
 ├── index.html
 
 ├── pages/
