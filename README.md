@@ -37,15 +37,15 @@ Este es un proyecto final del curso de Desarrollo Full Stack, centrado en un sit
 
 │ └── pages/
 
-│  ├── _home.scss
+│ │  ├── _home.scss
 
-│  ├── _about.scss
+│ │  ├── _about.scss
 
-│  ├── _contact.scss
+│ │  ├── _contact.scss
 
-│  ├── _services.scss
+│ │  ├── _services.scss
 
-│  └── _blog.scss
+│ │  └── _blog.scss
 
 └── assets/
 
