@@ -44,3 +44,11 @@
   color: #fff;
   .container { display: flex; justify-content: space-between; align-items: center; }
 }
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-left: 2rem;
+  @include animations.transition(color);
+  &:hover { color: variables.$color-secondary; }
+}
