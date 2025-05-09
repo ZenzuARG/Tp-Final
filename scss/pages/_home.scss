@@ -1,0 +1,23 @@
+@use "../variables";
+@use "../mixins";
+@use "../animations";
+
+#hero {
+  @include mixins.flex-center;
+  flex-direction: column;
+  text-align: center;
+  padding: 4rem 0;
+  background-image: url('../assets/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  animation: fade-in 1s ease-out;
+  .btn { margin-top: 1rem; }
+}
+
+#featured-services .cards {
+  @extend .grid !optional;
+  @extend .grid-3 !optional;
+  margin: 2rem 0;
+  & .card { animation: fade-in 0.6s ease-out; }
+}

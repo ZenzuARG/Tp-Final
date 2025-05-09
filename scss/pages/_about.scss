@@ -1,0 +1,17 @@
+@use "../variables";
+@use "../animations";
+
+.banner {
+  background-color: variables.$color-primary;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 0;
+  animation: fade-in 0.8s ease-out;
+}
+
+.team .cards {
+  @extend .grid !optional;
+  @extend .grid-3 !optional;
+  margin: 2rem 0;
+  & .card { animation: fade-in 0.5s ease-out; }
+}

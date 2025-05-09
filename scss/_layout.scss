@@ -1,0 +1,29 @@
+@use 'variables' as variables;
+@use 'mixins';
+.container {
+  width: 90%;
+  margin: 0 auto;
+  @include mixins.respond-to(desktop) { width: 80%; }
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.grid-3 {
+  grid-template-columns: 1fr;
+  @include mixins.respond-to(tablet)  {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include mixins.respond-to(desktop) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.grid-2 {
+  grid-template-columns: 1fr;
+  @include mixins.respond-to(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
