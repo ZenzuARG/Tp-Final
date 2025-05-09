@@ -24,20 +24,6 @@
   }
 }
 
-.btn {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  border-radius: 2rem;
-  background-color: variables.$color-primary;
-  color: #fff;
-  font-weight: bold;
-  @include animations.transition(background-color, transform);
-  &:hover {
-    background-color: variables.$color-secondary;
-    transform: translateY(-2px);
-  }
-}
-
 .card {
   background: #fff;
   border-radius: 0.5rem;

@@ -10,8 +10,6 @@
 }
 
 .team .cards {
-  @extend .grid !optional;
-  @extend .grid-3 !optional;
   margin: 2rem 0;
   & .card { animation: fade-in 0.5s ease-out; }
 }
