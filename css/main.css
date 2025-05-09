@@ -88,10 +88,6 @@ img {
   flex-wrap: wrap;
 }
 
-.nav-toggle {
-  display: none;
-}
-
 @media (max-width: 480px) {
   .nav-list {
     flex-direction: column;
