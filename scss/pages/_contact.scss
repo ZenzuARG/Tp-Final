@@ -20,4 +20,8 @@
   padding: 2rem 0;
   address { font-style: normal; line-height: 1.5; }
   animation: fade-in 0.7s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
 }

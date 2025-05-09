@@ -46,3 +46,19 @@ p {
   margin-bottom: 2rem;
   animation: fade-in 0.5s ease-out;
 }
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  animation: fade-in 0.5s ease-out;
+  list-style: none;
+  margin-bottom: 2rem;
+  a {
+    color: variables.$color-dark;
+    font-size: 1rem;
+    @include animations.transition(color);
+    &:hover { color: variables.$color-secondary; }
+    text-decoration: underline;
+  }
+}

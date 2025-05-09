@@ -27,7 +27,7 @@
 
 .card {
   background: #fff;
-  border-radius: 0.5rem;
+  border-radius: 4rem;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   @include animations.transition(box-shadow, transform);
@@ -35,8 +35,11 @@
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     transform: translateY(-5px);
   }
-  img { width: 100%; height: auto; }
+  img { width: 100%; height: auto; border-radius: 4rem;}
   padding: 1rem;
+  .btn {
+    margin-left: 15px;
+  }
 }
 
 .site-header,
@@ -47,9 +50,10 @@
 }
 
 .logo {
-  width: 100px;
-  height: 100px;
-  margin-left: 1rem;
-  @include animations.transition(color);
-  &:hover { color: variables.$color-secondary; }
+    border-radius: 40%;
+    width: 100px;
+    height: 100px;
+    margin-left: 1rem;
+    @include animations.transition(color);
+    &:hover { color: variables.$color-secondary; }
 }
