@@ -6,26 +6,47 @@ Este es un proyecto final del curso de Desarrollo Full Stack, centrado en un sit
 
 /
 ├── index.html
+
 ├── pages/
+
 │ ├──about.html
+
 │ ├──contact.html
+
 │ ├──blog.html
+
 │ └──services.html
+
 ├── css/
+
 │ └── main.css
+
 ├── scss/
+
 │ ├── main.scss
+
 │ ├── _variables.scss
+
 │ ├── _mixins.scss
+
 │ ├── _layout.scss
+
 │ ├── _components.scss
+
 │ ├── _base.scss
+
 │ └── pages/
+
 │  ├── _home.scss
+
 │  ├── _about.scss
+
 │  ├── _contact.scss
+
 │  ├── _services.scss
+
 │  └── _blog.scss
+
 └── assets/
 
 
