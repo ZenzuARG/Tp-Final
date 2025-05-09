@@ -6,22 +6,20 @@
   @include mixins.respond-to(desktop) { width: 80%; }
 }
 
+
 .grid {
-  display: grid;
-  gap: 1.5rem;
-}
+ display: grid;
+ gap: 1.5rem;
+ grid-template-columns: repeat(3, 1fr);
 
-.grid-3 {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: 1fr;
-  @include mixins.respond-to(desktop) { grid-template-columns: repeat(3, 1fr); }
-  @include mixins.respond-to(tablet)  { grid-template-columns: repeat(2, 1fr); }
-}
-
-.grid-2 {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: 1fr;
-  @include mixins.respond-to(tablet) { grid-template-columns: repeat(2, 1fr); }
+ @include mixins.respond-to(tablet) {
+  grid-template-columns: repeat(2, 1fr);
+ }
+ 
+ @include mixins.respond-to(desktop) {
+  grid-template-columns: repeat(3, 1fr);
+ }
+  @include mixins.respond-to(mobile) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
